@@ -72,7 +72,7 @@ export default function DocsSection() {
               <rect x="44" y="76" width="12" height="18" fill="black"/>
             </svg>
 
-          <div className="flex flex-col gap-6 w-full max-w-4xl mx-auto text-xs font-mono">
+          <div className="flex flex-col gap-6 w-full max-w-4xl mx-auto px-4 text-sm md:text-base font-mono">
   
     {/* Section Whitepaper */}
     <div id="whitepaper" className="p-6 bg-black border border-lime-500/40 text-white/90 text-left rounded space-y-3">
