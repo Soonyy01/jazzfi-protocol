@@ -71,22 +71,6 @@ export default function DocsSection() {
               <rect x="67" y="58" width="12" height="12" fill="black"/>
               <rect x="44" y="76" width="12" height="18" fill="black"/>
             </svg>
-            <div>
-              <span className="text-base font-extrabold tracking-tight text-neutral-950">JAZZFI</span>
-              <p className="text-xs text-neutral-600 mt-0.5">Institutional RWA & Tax Lien Mainnet Demo</p>
-              <div className="flex items-center space-x-4 mt-2">
-  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-white transition">
-    <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-    </svg>
-  </a>
-  <a href="#markets" className="text-xs font-semibold text-lime-400 hover:underline">
-    Chart
-  </a>
-</div>
-
-            </div>
-          </div>
 
           <div className="flex flex-col gap-6 w-full max-w-4xl mx-auto text-xs font-mono">
   
