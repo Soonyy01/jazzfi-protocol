@@ -17,7 +17,7 @@ export default function DocsSection() {
         </div>
 
         {/* Grid Panduan */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           <div className="bg-neutral-900/50 border border-neutral-800 p-6 rounded-2xl">
             <span className="text-xs font-mono text-lime-400">01. RWA LIENS</span>
             <h3 className="text-base font-semibold mt-2 mb-2">Tax Lien Certificates</h3>
@@ -54,11 +54,12 @@ export default function DocsSection() {
       </div>
 
       {/* Bagian Footer Bawah dengan Latar Putih Full dari Ujung ke Ujung */}
-      <div className="w-full bg-white text-neutral-950 pt-6 pb-6 mt-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div className="w-full bg-white text-neutral-950 py-12 mt-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-10 items-start">
           
-          <div className="flex items-center space-x-3 text-center md:text-left">
-            <svg className="w-6 h-6 rounded flex-shrink-0 shadow-sm" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          {/* Sisi Kiri: Area Logo JazzFi (Tetap sejajar & rapi di Mobile) */}
+          <div className="flex items-center space-x-3 w-full lg:w-auto justify-start flex-shrink-0">
+            <svg className="w-8 h-8 rounded flex-shrink-0 shadow-sm" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="100" height="100" fill="black"/>
               <rect x="6" y="6" width="88" height="88" fill="#CCFF00"/>
               <rect x="42" y="16" width="16" height="16" fill="black"/>
@@ -71,31 +72,35 @@ export default function DocsSection() {
               <rect x="67" y="58" width="12" height="12" fill="black"/>
               <rect x="44" y="76" width="12" height="18" fill="black"/>
             </svg>
+            <span className="font-mono font-black text-xl tracking-wider text-black">JAZZFI</span>
+          </div>
 
-          <div className="flex flex-col gap-6 w-full max-w-4xl mx-auto px-4 text-sm md:text-base font-mono">
+          {/* Sisi Kanan: Kontainer Dokumen Teknis */}
+          <div className="flex flex-col gap-6 w-full font-mono text-xs sm:text-sm">
   
-    {/* Section Whitepaper */}
-    <div id="whitepaper" className="p-6 bg-black border border-lime-500/40 text-white/90 text-left rounded space-y-3">
-        <h3 className="text-lime-400 font-bold text-sm">// WHITEPAPER: JAZZFI PROTOCOL</h3>
-        <p className="text-gray-300">
-            <strong>1. Abstract:</strong> JazzFi is an advanced decentralized finance and liquidity protocol built on Robinhood Chain, engineered to eliminate market noise, enable friction-free lending/borrowing, and deliver real-time smart money analytics with sub-second execution.
-        </p>
-        <p className="text-gray-300">
-            <strong>2. Core Architecture:</strong> Includes dynamic liquidity provision engines for passive yield generation, integrated smart money telemetry, and optimized execution on Robinhood Chain infrastructure.
-        </p>
-        <p className="text-gray-300">
-            <strong>3. Governance:</strong> Decoupled risk management protocols combined with community-driven parameter voting.
-        </p>
-    </div>
+            {/* Section Whitepaper */}
+            <div id="whitepaper" className="p-5 sm:p-6 bg-black border border-lime-500/40 text-white/90 text-left rounded-xl space-y-3 shadow-md">
+                <h3 className="text-lime-400 font-bold text-sm tracking-wide">// WHITEPAPER: JAZZFI PROTOCOL</h3>
+                <p className="text-gray-300 leading-relaxed">
+                    <strong>1. Abstract:</strong> JazzFi is an advanced decentralized finance and liquidity protocol built on Robinhood Chain, engineered to eliminate market noise, enable friction-free lending/borrowing, and deliver real-time smart money analytics with sub-second execution.
+                </p>
+                <p className="text-gray-300 leading-relaxed">
+                    <strong>2. Core Architecture:</strong> Includes dynamic liquidity provision engines for passive yield generation, integrated smart money telemetry, and optimized execution on Robinhood Chain infrastructure.
+                </p>
+                <p className="text-gray-300 leading-relaxed">
+                    <strong>3. Governance:</strong> Decoupled risk management protocols combined with community-driven parameter voting.
+                </p>
+            </div>
 
-    {/* Section About */}
-    <div id="about" className="p-6 bg-black border border-lime-500/40 text-white/90 text-left rounded space-y-3">
-        <h3 className="text-lime-400 font-bold text-sm">// ABOUT JAZZFI</h3>
-        <p className="text-gray-300 leading-relaxed">
-            JazzFi is the next-generation decentralized liquidity protocol operating on Robinhood Chain. Designed with a high-visibility terminal aesthetic, JazzFi bridges high-speed on-chain analytics with decentralized borrowing, lending, and liquidity provision—delivering a seamless, professional-grade experience for modern Web3 capital movers.
-        </p>
-    </div>
-</div>
+            {/* Section About */}
+            <div id="about" className="p-5 sm:p-6 bg-black border border-lime-500/40 text-white/90 text-left rounded-xl space-y-3 shadow-md">
+                <h3 className="text-lime-400 font-bold text-sm tracking-wide">// ABOUT JAZZFI</h3>
+                <p className="text-gray-300 leading-relaxed">
+                    JazzFi is the next-generation decentralized liquidity protocol operating on Robinhood Chain. Designed with a high-visibility terminal aesthetic, JazzFi bridges high-speed on-chain analytics with decentralized borrowing, lending, and liquidity provision—delivering a seamless, professional-grade experience for modern Web3 capital movers.
+                </p>
+            </div>
+
+          </div>
 
         </div>
       </div>
